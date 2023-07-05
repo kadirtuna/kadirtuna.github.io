@@ -24,20 +24,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:start;
     text-align: center;
 }
 
 .page img{
-    width: 70%;
-    height: 40%;
+    width: 75%;
+    height: 45%;
     object-fit: cover;
     margin-bottom: 2rem;
 }
 
 .page h1 {
-    font-size: 4rem;
-    margin: 2.5rem 0;
+    font-size: 3.5rem;
+    margin: 4rem 0 2.5rem;
 }
 
 .page a{
@@ -76,7 +76,7 @@ body {
 .arrows {
     position: absolute;
     left: center;
-    bottom: 3rem;
+    bottom: 9rem;
 }
 
 
