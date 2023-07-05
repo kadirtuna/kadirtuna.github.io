@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.page {
+    height: 100vh;
+    background-color: #22A699;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page img{
+    width: 70%;
+    height: 40%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.page h1 {
+    font-size: 4rem;
+    margin: 2.5rem 0;
+}
+
+.page a{
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .8rem 1.6rem;
+    transition: all .3s ease-in;
+}
+
+.page a:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+.page a:hover > i {
+    color: #222;
+    background-color: #fff;
+}
+
+.page a i{
+    color: #fff;
+    background-color: #335;
+    padding: 3px;
+    border-radius: 50%;
+    transition: all .3s ease-in; 
+}
+
+.page p {
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.arrows {
+    position: absolute;
+    left: center;
+    bottom: 3rem;
+}
+
+
+#first-page h1{
+    position: relative;
+    animation: text_animation_h .8s forwards ease-in-out;
+}
+
+#first-page, #second-page, #third-page, #fourth-page, #fifth-page, #sixth-page, #seventh-page, #eighth-page{
+    position: relative;
+}
+
+#first-page p{
+    position: relative; 
+    left: -2000px;
+    animation: text_animation_p .8s forwards .5s ease-in-out;
+}
+
+#second-page{
+    background-color: #F2BE22;
+}
+
+#third-page{
+    background-color: #F29727;
+}
+
+#fourth-page{
+    background-color: #F24C3D;
+}
+
+#fifth-page{
+    background-color: #22A699;
+}
+
+#sixth-page{
+    background-color: #F2BE22;
+}
+
+#seventh-page{
+    background-color: #F29727;
+}
+
+#eighth-page{
+    background-color: #F24C3D;
+}
+
+@media (min-height: 800px){
+    .page img {
+        margin-bottom: 5rem;
+    }
+
+    .page h1 {
+        margin: 5rem 0;
+    }
+
+    .page p{
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+@keyframes text_animation_h {
+    from {
+        top: -600px;
+    }
+
+    to{
+                top: 0;
+    }
+}
+
+@keyframes text_animation_p {
+    to {
+        left: 0;
+    }
+}
