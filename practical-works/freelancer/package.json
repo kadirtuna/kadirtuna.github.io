@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "scss": "node-sass -w scss -o public/css --output-style compressed"
+  },
+  "dependencies": {
+    "lightbox2": "^2.11.4",
+    "node-sass": "^9.0.0",
+    "owl.carousel": "^2.3.4"
+  }
+}

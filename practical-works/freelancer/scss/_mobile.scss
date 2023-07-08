@@ -1,0 +1,71 @@
+// tablets and smaller
+@media (max-width: 768px){
+    #header {
+        &__home {
+            height: 30rem;
+            
+            .header-content{
+                padding: 7rem;
+
+                h1 {
+                    font-size: 2.6rem; 
+                }
+            }
+        }
+    }
+
+    #home__a .skills,
+    #home__b .profile,
+    #home__c .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// mobile
+
+@media (max-width: 576px){
+    #header {
+        &__home {
+            height: 10rem;
+            border-bottom: 2px solid $primary-color;
+            background-position: 20% 30%;
+
+            .header-content{
+                display: none;
+            }
+        }
+
+        &__inner {
+            height: 10rem;
+        }
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            padding: 1rem;
+        }
+    }
+
+    #home__a .skills,
+    #home__b .profile,
+    #home__c .process {
+        grid-template-columns: 1fr;
+    }
+
+    #main-footer {
+        height: 8rem;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+
+            .social {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
