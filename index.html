@@ -1,124 +1,467 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Site</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-</head>
-<body>
-    <nav id="main-nav" class="nav">
-        <div class="container">
-            <img src="img/logo.png" alt="" class="logo">
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="article.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            </div>
-        </div>
-    </nav>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="header-container">
-                <div class="header-content">
-                    <div class="category bg-secondary">Sports</div>
-                    <h1>World Rowing Race!</h1>
-                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, rem omnis. Sunt adipisci, illum eaque odit necessitatibus veniam! Similique saepe dignissimos nihil exercitationem animi dolore atque deleniti facilis beatae assumenda.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8">
+    <meta name="description" content="Kadir Tuna">
+    <meta name="theme-color" content="#0078a6">
+
+    <meta property="og:title" content="Kadir Tuna" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kadirtuna.github.io/" />
+
+    <meta property="og:description" content="Kadir Tuna" />
+    <meta property="og:site_name" content="Kadir Tuna" />
+    <meta name="twitter:image:alt" content="Kadir Tuna" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title>Kadir Tuna Resume</title>
+
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <section id="name"> 
+              
+            </section>
+            <div class="row">  
+              <img src="img/foto.png" alt="Avatar man" height="200px" width="150px" style="margin-left: 20px; object-fit: cover;">
+              <h1 class="me" style="margin-left: 43px;  ">Kadir Tuna</h1>
+              </div>  
+            <section id="social">
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-2"><i class="fab fa-github"></i></div>
+                    <div class="col-10">
+                      <a target="_blank" href="https://github.com/kadirtuna"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main class="py-2">
-        <section id="cards" class="cards">
-            <div class="container">
-                <div class="cards-container">
-                    <div class="card">
-                        <img src="img/card1.jpg" alt="">
-                            <div class="category bg-primary">Entertainment</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-2"><i class="fas fa-at"></i></div>
+                    <div class="col-10">
+                      <a target="_blank" href="mailto:kadirtunaceeng@gmail.com"
+                        >kadirtunaceeng@gmail.com</a
+                      >
                     </div>
-                    <div class="card">
-                        <img src="img/card2.jpg" alt="">
-                            <div class="category bg-secondary">Technology</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/card3.jpg" alt="">
-                            <div class="category bg-primary">Entertainment</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/card4.jpg" alt="">
-                            <div class="category bg-primary">Entertainment</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/card5.jpg" alt="">
-                            <div class="category bg-primary">Entertainment</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/card6.jpg" alt="">
-                            <div class="category bg-primary">Entertainment</div>    
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta dolore nulla quis quam eius corporis doloribus veniam blanditiis ex! At dolores voluptas eaque accusamus architecto quidem eveniet earum quibusdam!</p>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer id="main-footer" class="footer py-2">
-        <div class="container footer-container">
-            <div>
-                <img src="img/logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque atque obcaecati, delectus labore ipsam!</p>
-            </div>
-            <div>
-                <h3>Join Us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consectetur.</p>
-                <form action="">
-                    <input type="email" name="email" id="email" placeholder="Enter Email">
-                    <input type="submit" value="Subscribe" class="btn btn-primary"></a>
-                </form>
-            </div>
-            <div>
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="#">Help & Support</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-2"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="col-10">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/kadirtuna20"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="footer-copy">
-                <p>Copyright &copy; 2024 All Rights Reserved</p>
-            </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="col-10">
+                      <a
+                        target="_blank"
+                        href="https://www.google.com/maps/place/Denizli,+Kumk%C4%B1s%C4%B1k,+Denizli/@37.7805375,29.0444961,13.72z/data=!4m6!3m5!1s0x14c73fb1353a6a69:0x2e3363fee62068ae!8m2!3d37.7830159!4d29.0963328!16zL20vMDM5cnJu"
+                        >Turkey, Denizli</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-2"><i class="fas fa-wand-magic"></i></div>
+                    <div class="col-10">
+                      <a
+                        target="_blank"
+                        href="https://kadirtuna.github.io/"
+                        >Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="education">
+              <h2>Education</h2>
+
+              <h4>Senior Student at Pamukkale University </h4>
+              <h5>Computer Engineering - 3.58/4 GPA</h5>
+              <h6>2019-2023</h6>
+              <p>Double Major Program</p>
+
+              <hr />
+
+              <h4>Senior Student at Pamukkale University</h4>
+              <h5>Electrical-Electronics Engineering - 3.19/4 GPA</h5>
+              <h6>2018-2023</h6>
+              <hr />
+
+              <h4>Web Design and Coding at Anadolu University</h4>
+              <h5>Assosicate Degree Open Education</h5>
+              <h6>2022-2024</h6>
+
+              <hr />
+
+              <h4>English Preperation at Pamukkale University</h4>
+              <h5>B1+ English Level</h5>
+              <h6>2017</h6>
+              
+            </section>
+
+            <section id="workexperience">
+              <h2>Work Experience</h2>
+
+              <h4>Prizma Software</h4>
+              <h5>Back-end Developer Intern</h5>
+              <h6>June 2022 - July 2022</h6>
+              <p>During my internship at Prizma Software:</p>
+              <li><u><em>On the Back-end part</em></u>; Implementing 3 Layered architecture, UnitOfWork and Repository patterns. Designed a REST API service that interacts with the database in MSSQL using Entity Core framework ORM in .NET Core / ASP.NET Core with HTTP Methods CRUD Operations. </li>
+              <li><u><em>On the Front-End part</em></u>, Created a WEB Interface with HTML, CSS, C# Blazor Framework and Razor Components.</li>
+              <li>
+                Created RESTful API and tested with Postman, Swagger(Open) API.
+              </li>
+            </section>
+
+            <section class="certificates">
+              <h2>Certificates</h2>
+
+              <div class="row">
+                <div class="col-2"><h4>2023</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://drive.google.com/file/d/190Z81DDuCilxIUYNMNKXlyqd4A9Cvsel/view"
+                      >Teknofest 2023 - Fighter UAV Competition - Finalist</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2023</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://drive.google.com/file/d/1lAO6YdAxEg3NKGTyfL_xnYcimNz5vK9B/view?usp=sharing"
+                      >Middle Level Python Education - Yazilim Koyu</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2023</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://globalaihub.com/certificate-share/eyJ1c2VyLWlkIjoxNjcwOTksImNvdXJzZS1pZCI6MTEwNTQ4LCJjZXJ0LWlkIjoiMTEwODkxIn0="
+                      >Introduction to Machine Learning</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2022</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://drive.google.com/file/d/1EzWJacXGg4aR0QJlpSWwuCu7YILhxWFU/view?usp=sharing"
+                      >OLS English Language Assessment - Erasmus+</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2022</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://akbank-genclik-akademisi.verified.cv/tr/verify/88341734778607"
+                      >Yapay Zeka 101 - Akbank</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2022</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://drive.google.com/file/d/1EhaSx756toqpTKF6a3k7g2NysSN7ZHJr/view?usp=sharing"
+                      >Beyin Egzersizleriyle Hafıza Güclendirme</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2"><h4>2022</h4></div>
+                <div class="col-10">
+                  <h4>
+                    <a
+                      href="https://drive.google.com/file/d/16XCdSQ1C1jKu9fASVO7738mjRFnx059b/view?usp=sharing"
+                      >Dijital Pazarlamanın Temelleri</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+            </section>
+
+            <section id="skills">
+              <h2>Skills</h2>
+
+              <div class="row">
+                <div class="col-4 font-weight-bold">Intermediate</div>
+                <h4 class="col-8">C, C#, Python, .NET Core, ASP.NET Core, Git, HTML, CSS, Bootstrap, JavaScript, OOP, MSSQL, YOLO</h4>
+              </div>
+
+              <div class="row">
+                <div class="col-4 font-weight-bold">Novice</div>
+                <h4 class="col-8">Java, Matlab, PLC, PostreSQL, ML, AI, Solidworks </h4>
+              </div>
+
+              <div class="row">
+                <div class="col-4 font-weight-bold">Using</div>
+                <h4 class="col-8">
+                  PyQt, Numpy, Pandas, Redis, RabbitMQ, Microservices, Rest API, Postman API, Design Patterns, ORM Tools
+                </h4>
+              </div>
+            </section>
+
+            <section id="hobbies">
+              <h2>Hobbies</h2>
+              
+              <div class="row">
+                <h4 class="col-8">Fitness, Swimming and Playing Volleyball</h4>
+                <h4 class="col-2">3+ years</h4>
+              </div>
+
+              <div class="row">
+                <h4 class="col-8">Playing Guitar and Piano</h4>
+                <h4 class="col-2">4+ years</h4>
+              </div>
+
+              <div class="row">
+                <h4 class="col-8">Riding Motocycle</h4>
+                <h4 class="col-2"></h4>
+              </div>
+
+              <div class="row">
+                <h4 class="col-8">Chess Game</h4>
+                <h4 class="col-2"></h4>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-6">
+            <section id="projects">
+              <h2>Projects</h2>
+              
+               <a href="https://github.com/kadirtuna/AlganTeknofestUAVTeamGUIDemo" target="_blank">
+                <h3>Algan UAV Teknofest Team GUI</h3>
+              </a>
+                Moon Card Tool is a Going On Project
+                <br />
+                <br />
+               <li>Created a GUI demonstrates telemetry data and the snapshots of the camera which is taken by UAV with some features shown in Github. </li>
+              <li>AI competitor UAV detection model is processed the video. Therefore, our UAV carries out “Locking” and “Kamikaze” missions regarding it.</li>
+              <li>My main responsibilities in the project are OOP Design, Pyqt5, UI/UX, AI, OpenCV, YOLO Model, TCP/UDP Socket programming, FFMPEG and Code Integration processes.</li>
+              <hr />
+
+               <a href="https://github.com/kadirtuna/StudentTrackingApplicationWebApplication" target="_blank">
+                <h3>Student Tracking WEB Application</h3>
+              </a>
+              <li>It’s a WEB API provides tracking a school’s manager, teacher, student and their management processes like adding, removing or updating a new student to the related courses and its other related databases tables.</li>
+              <li>Created WEB API with using ASP.NET Core, .NET Core and EF Core ORM in C#. Supported with Postman, Swagger(Open) API.</li>
+              <hr />
+
+              <a href="https://www.youtube.com/watch?v=rcq_GmLY6EE&ab_channel=AhmetB%C3%BCreo%C4%9Flu" target="_blank">
+                <h3>E-Commerce Website</h3>
+              </a>
+              <li>Designed E-Commerce Website for school project using C#, HTML, CSS, Bootstrap 5, JavaScript, ASP.NET Technologies and MSSQL.</li>
+              <li>The test part has been carried out with Selenium Framework.</li>
+   
+              <hr />
+              
+              <a href="https://github.com/kadirtuna/.NETTasks" target="_blank">
+                <h3>Enoca .NET Tasks</h3>
+              </a>
+              It has my completed tasks about using Redis, RabbitMQ technologies as well Microservices architecture, JWT Token, Pagination, Rate Limiting.
+              <hr />   
+              <a
+                href="https://github.com/kadirtuna/CargoManagementWEBAPI"
+                target="_blank"
+              >
+                <h3>Cargo Management WEB API</h3>
+              </a>
+              The RESTful API project that automates the order progress in Cargo Management. It finds the cheapest carrier regarding the order's desi. Therefore, the order is automatically made from that the most eligible company.
+              <hr />
+
+              <a
+                href="https://github.com/kadirtuna/LiveProcessedVideoStream"
+                target="_blank"
+              >
+                <h3>People Counter Broadcast Server</h3>
+              </a>
+              The Python Flask server publishes the processed video which detects and counts the people frame by frame with Neural Network Algorithm Yolo Model.
+              <hr />
+
+              <a href="https://github.com/kadirtuna/TheMemoryGame" target="_blank">
+                <h3>The Memory Game</h3>
+              </a>
+
+              It is developed to increase brain memory activity by memorizing the complicated puzzle squares with the short time that can be changed on the game.
+            </section>
+
+
+            <section id="volunteerwork">
+              <h2>Volunteer Work</h2> 
+
+              <h4>Algan UAV Teknofest Team</h4>
+              <h5>Pamukkale University</h5>
+              <h6>8 months</h6>
+              <p>As a senior CENG and EENG student, I've developed a <b><a href="https://github.com/kadirtuna/AlganTeknofestUAVTeamGUIDemo">GUI</a></b> which demonstrates the telemetry data of the UAV as well the instant processed data by our YOLO Object detection model. Also, the integration processes between the systems have been done.</p>
+
+              <hr />
+          
+            </section>
+
+              <section id="languages">
+              <h2>Languages</h2> 
+
+              <h4>Turkish - Native</h4>
+              <h6></h6>
+              <hr />
+
+              <h4>English - B2</h4>
+              <h6></h6>
+              <hr />
+              
+              <h4>Spanish - A1</h4>
+              <h6></h6>
+              <hr />
         </div>
-    </footer>
-</body>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+
+      color: #262626;
+      background-color: #e0e0e0;
+    }
+
+    @media print {
+      body {
+        width: 21cm;
+        height: 29.7cm;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    section {
+      margin: 2em 0;
+    }
+
+    h2 {
+      padding-bottom: 10px;
+      border-bottom: 3px solid #333;
+      color: #4E4FEB;
+    }
+
+    h3 {
+      font-size: 1.6em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+
+    a {
+      color: initial;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:hover > * {
+      color: #22465f;
+    }
+
+    i {
+      font-size: 1.4em;
+    }
+
+    .me{
+      margin-top: 20px;
+    }
+  </style>
 </html>
