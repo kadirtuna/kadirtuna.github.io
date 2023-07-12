@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #085E7D !important;
+}
+
+.bg-dark {
+    background-color: #085E7D !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.card-img-start {
+    height: 25vh;
+    object-fit: cover;
+}
+
+#map {
+    height: 450px;
+}
+
+@media (min-width: 768px){
+    .card-img-top {
+        height: 32vh;
+    }
+
+    .card-img-start {
+        height: 32vh;
+    }
+
+    #map {
+        height: 100%;
+    }
+}
