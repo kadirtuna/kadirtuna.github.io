@@ -1,0 +1,57 @@
+/* .container {
+    width: 350px;
+    text-align: center;
+}
+
+#controls i{
+    font-size: 30px;
+    color: purple;
+    margin-right: 20px;
+}
+
+#progress {
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+}
+
+#progress .times,
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#music-image {
+    width: 100%;   
+    object-fit: cover;
+}
+ */
+
+ * {
+    font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .card-header{
+    padding: 0 !important;
+ }
+
+ .border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+ }
+
+.collapse__music:hover {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.volume-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#collapse__songs .collapse__a-0{
+    background-color: red !important;
+}
