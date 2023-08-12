@@ -165,7 +165,7 @@ for (let i = 0; i < 88; i++){
     }
 
     let html = `
-    <a href="#" id="note${i}">
+    <a href="#piano__header_scrollbar" id="note${i}">
         <div class="${str}">
             <h3 style="display: ${display};background-color: ${colorsRegardingRange[counter]}" data-key="${dataKey}">${text}${counterTemp}</h3>
         </div>
