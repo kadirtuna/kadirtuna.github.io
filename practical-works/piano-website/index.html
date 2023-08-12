@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        .piano {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 500px;
+            position: relative;
+            border-radius: 2rem 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 30%;
+            border-bottom: 3px solid red;
+        }
+
+        main {
+            background-color: white;
+            width: 100%;
+            height: 70%;
+        }
+
+        section.header__buttons {
+            height: 50%;
+        }
+
+        section.header__buttons a {
+            border-radius: 10px;
+        }
+
+        section.header__scrollbar {
+            background-color: rgb(50, 50, 50);
+            height: 50%;
+        }
+
+        section.header__scrollbar a{
+            border: 2px solid rgb(64, 64, 64);
+            border-radius: 10px;
+        }
+
+        section.header__buttons a:hover,
+        section.header__scrollbar a:hover{
+            background-color: rgb(64, 64, 64);
+        }
+
+        section.header__buttons a:active,
+        section.header__scrollbar a:active{
+            background-color: rgb(192, 192, 192);
+            color: black;
+        }
+
+        #piano__main_keys {
+            height: 100%;
+        }
+        
+        #piano__main_keys .content {
+            height: 100%;
+            background-color: black;
+            color: black;
+            position: relative;
+            white-space: nowrap;
+            overflow-x: scroll;
+            display: flex;
+        }
+
+        #piano__main_keys .content *{
+            border-radius: 0 0 10px 10px;
+         }
+
+        #piano__main_keys .content h3 {
+            padding: 8px !important;   
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        
+        #piano__main_keys .content .piano__main_key {
+            display: inline-block;
+            background-color: white;
+            height: 98%;
+            width: 3.5rem;
+            /* border: 1px solid black; */
+            margin-left: 1.5px;
+            margin-right: 1.5px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        
+        #piano__main_keys .content .piano__main_key:hover {
+            background-color: rgb(196, 196, 196) !important;
+        }
+        
+        #piano__main_keys .content .piano__main_key:active { 
+            background-color: rgb(128, 128, 128) !important;
+        }
+
+        #piano__main_keys .content .piano__diez_key {
+            position: absolute;
+            transform: translate(-50%, 0);
+            /* background-color: rgb(32, 32, 32); */
+            background: linear-gradient(to left, rgb(16, 16, 16), rgb(64, 64, 64), rgb(16, 16, 16));
+            display: inline-block;
+            height: 55%;
+            width: 3.5rem;
+        }
+
+        #piano__main_keys .content .piano__diez_key:hover { 
+            background: linear-gradient(to left, rgb(48, 48, 48), rgb(64, 64, 64), rgb(48, 48, 48)) !important;
+        }
+
+        #piano__main_keys .content .piano__diez_key:active { 
+            background: linear-gradient(to left, rgb(96, 96, 96), rgb(128, 128, 128), rgb(96, 96, 96)) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="piano">
+            <header>
+                <section class="header__buttons d-flex align-items-center justify-content-between">
+                    <a href="#" class="my-1 mx-3 p-1">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </a>
+                    <!-- <h3>Made By Kadir TUNA</h3> -->
+                    <div class="d-flex align-items-center">
+                        <h3 class="me-1">Hediye</h3>
+                        <i class="fa-solid fa-heart fa-2x me-1" style="color: red"></i>
+                        <h3>Kadir</h3>
+                    </div>
+                    <a href="#" class="my-1 mx-3 p-1">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                    </a>
+                </section>
+                <section class="header__scrollbar d-flex justify-content-between align-items-center">
+                    <div>
+                        <a href="#" id="piano__double_back" class="my-1 mx-2 p-2">
+                            <i class="fa-solid fa-angles-left fa-xl"></i>
+                        </a>
+                        <a href="#" id="piano__back" class="my-1 mx-2 p-2">
+                            <i class="fa-solid fa-arrow-left fa-xl"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h2>THE PIANO OF LOVE</h2>
+                    </div>
+                    <div>
+                        <a href="#" id="piano__forward" class="my-1 mx-2 p-2">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>    
+                        </a>
+                        <a href="#" id="piano__double_forward" class="my-1 mx-2 p-2">
+                            <i class="fa-solid fa-angles-right fa-xl"></i>
+                        </a>
+                    </div>
+                </section>
+            </header>
+            <main>
+                <div id="piano__main_keys">
+                    <div class="content">
+                        <!-- <a href="#" data-key="a" id="la-1">
+                            <div class="piano__main_key"></div>
+                        </a>
+                        <a href="#" data-key="w" id="la_diez-1">
+                            <div class="piano__diez_key"></div>
+                        </a>
+                        <a href="#" data-key="s" id="si-1">
+                            <div class="piano__main_key"></div>
+                        </a> -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
