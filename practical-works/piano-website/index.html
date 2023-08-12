@@ -21,14 +21,14 @@
             background-color: black;
             color: white;
             width: 100%;
-            height: 30%;
+            height: 50%;
             border-bottom: 3px solid red;
         }
 
         main {
             background-color: white;
             width: 100%;
-            height: 70%;
+            height: 50%;
         }
 
         section.header__buttons {
@@ -123,6 +123,69 @@
         #piano__main_keys .content .piano__diez_key:active { 
             background: linear-gradient(to left, rgb(96, 96, 96), rgb(128, 128, 128), rgb(96, 96, 96)) !important;
         }
+
+        @media(max-width: 768px){
+            header {
+                height: 45%;
+            }
+
+            main {
+                height: 55%;
+            }
+
+            .piano { 
+                height: 600px;
+            }
+
+            section.header__buttons {
+                height: 30%;
+            }
+
+            section.header__scrollbar {
+                height: 70%;
+            }
+            
+            section.header__scrollbar div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media(max-width: 450px){ 
+            #piano__header_title {
+                padding-top: 5px;
+            }
+
+            #piano__header_menu {
+                display: none;
+            }
+
+            section.header__buttons { 
+                display: flex;
+                flex-direction: column;
+            }
+
+            section.header__buttons a{ 
+                padding: 10px;
+                margin-bottom: 2px;
+                margin-top: 2px;
+            } 
+
+            section.header__buttons {
+                height: 30%;
+            }
+
+            section.header__scrollbar {
+                height: 70%;
+            }
+
+            .piano { 
+                height: 600px;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -130,11 +193,11 @@
         <div class="piano">
             <header>
                 <section class="header__buttons d-flex align-items-center justify-content-between">
-                    <a href="#" class="my-1 mx-3 p-1">
+                    <a id="piano__header_menu" href="#" class="my-1 mx-3 p-1">
                         <i class="fa-solid fa-bars fa-xl"></i>
                     </a>
                     <!-- <h3>Made By Kadir TUNA</h3> -->
-                    <div class="d-flex align-items-center">
+                    <div id="piano__header_title" class="d-flex align-items-center justify-content">
                         <h3 class="me-1">Hediye</h3>
                         <i class="fa-solid fa-heart fa-2x me-1" style="color: red"></i>
                         <h3>Kadir</h3>
@@ -152,7 +215,7 @@
                             <i class="fa-solid fa-arrow-left fa-xl"></i>
                         </a>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <h2>THE PIANO OF LOVE</h2>
                     </div>
                     <div>
