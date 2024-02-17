@@ -3057,6 +3057,10 @@ float: left;
         width: auto;
         margin: 0px 0;
     }
+
+    .section-title { 
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 480px) {
     .footer {
