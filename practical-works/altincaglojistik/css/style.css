@@ -3018,9 +3018,14 @@ float: left;
 /* DEĞİŞEBİLİR */
 @media screen and (max-width: 767px) {
     .header .caption h1 {
-    font-size: 30px;
+    font-size: 60px;
     margin-bottom: 15px;
     }
+
+    .header .caption .textsm-6 h1 {
+        font-size: 30px;
+    }
+
     .header .caption h1 span {
         font-size: 50px;
     }
