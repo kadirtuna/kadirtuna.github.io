@@ -3014,9 +3014,11 @@ float: left;
     font-size: 15px;
 }  
 }
+
+/* DEĞİŞEBİLİR */
 @media screen and (max-width: 767px) {
     .header .caption h1 {
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 15px;
     }
     .header .caption h1 span {
